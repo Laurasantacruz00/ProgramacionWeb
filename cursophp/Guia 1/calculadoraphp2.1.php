@@ -16,13 +16,13 @@
             <label for="num2"></label>
             <input type="text" name="num2" id="num2">
             <label for="operacion"></label>
-            <select>
-                <option>Suma</option>
-                <option>Resta</option>
-                <option>Multiplicacion</option>
-                <option>Division</option>
-                <option>Modulo</option>
-            </select>
+                <select name="operacion" id="operacion">
+                    <option>Suma</option>
+                    <option>Resta</option>
+                    <option>Multiplicacion</option>
+                    <option>Division</option>
+                    <option>Modulo</option>
+                </select>
         </p>
         <p>
             <input type="submit" name="button" id="button" value="Enviar" onClick="prueba">

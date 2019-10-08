@@ -10,12 +10,13 @@
             color: #F00;
             font-weight:bold;
         }
+        
     </style>
 </head>
 <body>
-
-    
-        <!-- print "Bienvenido al curso de PHP <br>";
+    <?php
+        
+        print "Bienvenido al curso de PHP <br>";
         print "Hola alumnos <br>";
         print "Hasta el proximo video <br>";
         
@@ -47,33 +48,30 @@
         $a = "Hello";
         $b = $a."World";
         $a = "Hello";
-        $a .= "World"; -->
+        $a .= "World"; 
     
-    <!-- 
+
         function dameDatos(){
             echo "este es el mensaje del interior de la funcion <br>";
-        } 
-    -->
-    <!-- //Flujo de ejecucion de un programa php
-         echo "Este es el primer mensaje <br>";
-         include("proporciona_datos.php");
-         echo "Este es el segundo mensaje <br>";
-         dameDatos();
+        }
+        //Flujo de ejecucion de un programa php
+        echo "Este es el primer mensaje <br>";
+        include("proporciona_datos.php");
+        echo "Este es el segundo mensaje <br>";
+        dameDatos();
 
-         $nombre="Laura";
+        $nombre="Laura";
 
-         function dameNombre(){
-             global $nombre;
-             $nombre="El nombre es ".$nombre;
-         }
+        function dameNombre(){
+            global $nombre;
+            $nombre="El nombre es ".$nombre;
+        }
 
         dameNombre();
-        echo $nombre;  -->
+        echo $nombre;   
     
-    <?php
-         
-        
-        /*function incrementaVariable(){
+    
+        function incrementaVariable(){
             static $contador = 0; //Para que el valor no se destruya
             $contador++;
 

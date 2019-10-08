@@ -51,7 +51,9 @@
             </tr>
         </table>
     </form>
+    
     <?php
+    
         if(isset($_POST["enviado"])){
             $usuario=$_POST["nombre_usuario"];
             $edad=$_POST["edad_usuario"];
@@ -59,7 +61,6 @@
                 echo "<p class='valido'>Puedes entrar</p>";
             }else{
                 echo "<p class=\"no_valido\">"."No Puedes entrar"."</p>";
-            }
             }
         }
 

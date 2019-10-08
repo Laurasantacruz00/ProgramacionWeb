@@ -23,7 +23,7 @@
 
     $resultado = $var1 && $var2;
 
-    if(&resultado == true){
+    if($resultado == true){
         echo "correcto";
     }else{
         echo "Incorrecto";
@@ -33,17 +33,21 @@
 
     if(isset($_POST["enviando"])){
         $edad=$_POST["edad_usuario"];
-        if($edad <= 18){
+        
+        /*if($edad <= 18){
             echo "Eres menos de edad";
         }else if($edad <= 65){
             echo "eres maduro";
         }else{
             echo "Cu&iacute;date";
-        }
+        }*/
         /*condicion ?  valor si verdadero : valor si falso*/
         echo $edad<18 ? "Eres menor de edad. No puedes acceder":"Puedes acceder";
+        
+        $contra=$_POST["contra"];
+        $nombre=$_POST["nombre_usuario"];
 
-        $resultado = $nombre=="Juan" && $contra=="1234" ? "puedes acceder":"No puedes acceder"
+        $resultado = $nombre=="Juan" && $contra=="1234" ? "puedes acceder":"No puedes acceder";
 
         echo $resultado;
     }
@@ -66,7 +70,7 @@
             break;
             default:
                 echo "Usuario no autorizado";
-        endswitch
+        endswitch;
     }
 
     $var1=1;
@@ -79,7 +83,7 @@
     echo "Hemos salido del bucle"*/
 
     do{
-        echo "Estamos ejecutando el codigo del bucle <br>"
+        echo "Estamos ejecutando el codigo del bucle <br>";
         $var1++;
     }while($var1<6);
 
